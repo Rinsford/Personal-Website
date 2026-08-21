@@ -1,0 +1,12 @@
+body {
+    background-color: #276221;
+    color: #abd482;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: #abd482;
+    text-decoration: underline;
+}
