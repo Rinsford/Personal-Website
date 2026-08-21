@@ -13,7 +13,7 @@ a {
 
 .cursor {
     display: inline-block;
-    animation: blink 1s step-end infinite;
+    animation: blink 0.5s step-end infinite;
 }
 
 @keyframes blink {
