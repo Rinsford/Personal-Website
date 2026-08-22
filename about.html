@@ -8,17 +8,28 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="about.css">
             <!---This code is to make this file copy the coded style on the css file. --->
         </head>
         <body>
-            <h1><span id="typed-text"></span><span class="cursor">_</span></h1>
+            <main>
+                <h1><span id="typed-text"></span><span class="cursor">_</span></h1>
+
+                <div id="buttons" class="buttons" aria-hidden="true">
+                    <a href="index.html" aria-label="Go home">
+                        <img src="images/exit-button-.png" alt="Exit">
+                    </a>
+                    <a href="#" aria-label="Finished">
+                        <img src="images/finished-Sprite-0002.png" alt="Finished">
+                    </a>
+                </div>
+            </main>
 
             <!---This makes the animation work.--->
             
             <!---The JS code to make the typing animation work.-->
             <script>
-                const text = "Hello, I am Rinsford";
+                const text = "Welcome to Rinsford's Personal Website!"; //This is the text that will be typed out
 
                 text.id = 'typed-text';
                 //this code gives the JS code an id for the css file
@@ -32,6 +43,9 @@
                     target.textContent += text.charAt(index);
                     index++; //Moves to the next character in the text
                     setTimeout(typeText, 100);
+                    } else {
+                        document.getElementById("buttons").classList.add("visible");
+                        document.getElementById("buttons").setAttribute("aria-hidden", "false");
                     }
                 }
 
