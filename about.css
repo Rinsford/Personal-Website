@@ -1,0 +1,33 @@
+body {
+    background-color: #276221;
+    color: #abd482;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: #abd482;
+    text-decoration: underline;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
