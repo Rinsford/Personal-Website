@@ -6,15 +6,6 @@ body {
     font-style: normal;
 }
 
-body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 a {
     color: #abd482;
     text-decoration: underline;
