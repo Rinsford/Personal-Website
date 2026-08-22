@@ -16,15 +16,17 @@
 
             <!---This makes the animation work.--->
             
+            <!---The JS code to make the typing animation work.-->
             <script>
                 const text = "Hello, I am Rinsford";
                 const target = document.getElementById("typed-text");
-                let index = 0;
+                let index = 0; //Starts the index at 0(the first character of the text)
+                
 
                 function typeText() {
                     if (index < text.length) {
                     target.textContent += text.charAt(index);
-                    index++;
+                    index++; //Moves to the next character in the text
                     setTimeout(typeText, 100);
                     }
                 }
@@ -32,5 +34,6 @@
                 typeText();
             </script>
 
+            
         </body>
     </html>
