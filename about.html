@@ -10,10 +10,26 @@
 
             <link rel="stylesheet" href="style.css">
             <!---This code is to make this file copy the coded style on the css file. --->
-
-            <script src="script.js"></script>
         </head>
         <body>
             <h1><span id="typed-text"></span><span class="cursor">_</span></h1>
+
+            <!---This makes the animation work.--->
+            <script>
+  const text = "Hello, I am Rinsford";
+  const target = document.getElementById("typed-text");
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      target.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeText, 100);
+    }
+  }
+
+  typeText();
+</script>
+
         </body>
     </html>
