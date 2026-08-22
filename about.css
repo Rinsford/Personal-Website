@@ -4,9 +4,7 @@ body {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
-}
 
-#text {
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -14,6 +12,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
 
 main {
     width: 100%;
