@@ -19,6 +19,10 @@
             <!---The JS code to make the typing animation work.-->
             <script>
                 const text = "Hello, I am Rinsford";
+
+                text.id = 'typed-text';
+                //this code gives the JS code an id for the css file
+
                 const target = document.getElementById("typed-text");
                 let index = 0; //Starts the index at 0(the first character of the text)
                 
@@ -34,6 +38,6 @@
                 typeText();
             </script>
 
-            
+
         </body>
     </html>
