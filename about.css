@@ -4,7 +4,9 @@ body {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
-    
+}
+
+#typed-text {
     min-height: 100vh;
     margin: 0;
     display: flex;
