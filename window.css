@@ -1,12 +1,25 @@
 body {
     background-color: black;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
 }
 
 .window {
-     min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#folder {
+    position: absolute;
+    top: 18%;
+    left: 27%;
+    z-index: 1;
+}
+
+.folder-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
 }
