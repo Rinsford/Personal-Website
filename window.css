@@ -17,8 +17,8 @@ body {
     left: 27%;
     z-index: 1;
     display: grid;
-    grid-template-columns: repeat(2, 45px);
-    grid-template-rows: repeat(3, 45px);
+    grid-template-columns: repeat(3, 45px);
+    grid-template-rows: repeat(2, 45px);
     gap: 24px 32px;
 }
 
