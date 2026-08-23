@@ -11,14 +11,20 @@ body {
     height: 100vh;
 }
 
-#folder {
+.folder-grid {
     position: absolute;
     top: 16%;
     left: 5%;
     z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 45px);
+    grid-template-rows: repeat(3, 45px);
+    gap: 24px 32px;
+}
+
+.folder {
     width: 45px;
     height: 45px;
-    aspect-ratio: 1;
 }
 
 .folder-icon {
