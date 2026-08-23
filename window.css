@@ -22,4 +22,11 @@ body {
     display: block;
     width: 32px;
     height: 32px;
+
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
