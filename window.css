@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 45px);
     grid-template-rows: repeat(2, 45px);
-    gap: 50px 32px;
+    gap: 50px 50px;
 }
 
 .folder {
