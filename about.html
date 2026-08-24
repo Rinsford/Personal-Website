@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-    <html>
+<!doctype html>
+    <html lang="en">
         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>About Rinsford</title>
              <!--The link codes process: the first link is to connect to google fonts.
                 The second link is to connect to the font file server.
                 The third link is to load the VT323 font. -->
@@ -32,17 +35,18 @@
                 const text = "Welcome to Rinsford's Personal Website!"; //This is the text that will be typed out
 
                 const target = document.getElementById("typed-text");
+                const buttons = document.getElementById("buttons");
                 let index = 0; //Starts the index at 0(the first character of the text)
                 
 
                 function typeText() {
-                    if (index < text.length) {
+                    if (target && index < text.length) {
                     target.textContent += text.charAt(index);
                     index++; //Moves to the next character in the text
                     setTimeout(typeText, 100);
-                    } else {
-                        document.getElementById("buttons").classList.add("visible");
-                        document.getElementById("buttons").setAttribute("aria-hidden", "false");
+                    } else if (buttons) {
+                        buttons.classList.add("visible");
+                        buttons.setAttribute("aria-hidden", "false");
                     }
                 }
 
