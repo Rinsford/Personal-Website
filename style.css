@@ -1,13 +1,13 @@
 body {
-    background-color: #276221;
-    color: #abd482;
+    background-color: #0f380f;
+    color: #ceff00;
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
 }
 
 a {
-    color: #abd482;
+    color: #ceff00;
     text-decoration: underline;
 }
 
