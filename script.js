@@ -23,5 +23,26 @@ terminalInput.addEventListener('keydown', function(event) {
 
         // The terminal input reappears after the command is executed
         repeatCommand();
+
+        //If the user types the 'cd' command with the files name
+        //The hover window will appear with the information in that file
+        if (command === 'cd') {
+            
+            //If the user types 'cd about-me', the hover window will appear with the information in that file
+            if (command === 'cd about-me') {
+                window.location.href = 'about-me.html';
+            }
+
+            //If the user types 'cd projects', the hover window will appear with the information in that file
+            if (command === 'cd projects') {
+                window.location.href = 'projects.html';
+            }
+
+            //If the user types 'cd contact', the hover window will appear with the information in that file
+            if (command === 'cd contact') {
+                window.location.href = 'contact.html';
+            }
+
+        }
     }
 })
