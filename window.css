@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     padding: 5px;
+    position: relative;
 }
 
 /* Prompt Symbol */
@@ -29,12 +30,16 @@ body {
     outline: none;
     color: #ceff00;
     font-family: "VT323", monospace;
+    font-size: 1rem;
     flex-grow: 1;
+    caret-color: transparent;
 }
 
 /* Blinking Cursor */
 .cursor {
-    display: inline-block;
+    position: absolute;
+    left: 5px;
+    pointer-events: none;
     animation: blink 1s step-end infinite;
 }
 
