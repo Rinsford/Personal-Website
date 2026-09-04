@@ -42,7 +42,7 @@ body {
 }
 
 /* Popup Window */
-.popup-window {
+#popup-window {
     width: 400px;
     height: 300px;
     background-color: white;
