@@ -34,20 +34,3 @@ body {
     flex-grow: 1;
     caret-color: transparent;
 }
-
-/* Blinking Cursor */
-.cursor {
-    position: absolute;
-    left: 5px;
-    pointer-events: none;
-    animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
