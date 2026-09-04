@@ -1,37 +1,6 @@
 body {
-    background-color: black;
+    background-color: #0f380f;
     margin: 0;
     position: relative;
     min-height: 100vh;
-}
-
-.window {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-}
-
-.folder-grid {
-    position: absolute;
-    top: 16%;
-    left: 27%;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 45px);
-    grid-template-rows: repeat(2, 45px);
-    gap: 100px 70px;
-}
-
-.folder {
-    width: 100px;
-    height: 100px;
-}
-
-.folder-icon {
-    display: block;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1;
-    object-fit: contain;
 }
