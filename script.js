@@ -29,12 +29,14 @@ terminalInput.addEventListener('keydown', function(event) {
 
         // If the user types 'cd projects', open the projects popup.
         if (command === 'cd projects') {
-            window.location.href = 'projects.html';
+            popupWindow.classList.remove('hidden');
+            document.querySelector('#popup-content-projects').classList.remove('hidden');
         }
 
         // If the user types 'cd contact', open the contact popup.
         if (command === 'cd contact') {
-            window.location.href = 'contact.html';
+             popupWindow.classList.remove('hidden');
+             document.querySelector('#popup-content-contact').classList.remove('hidden');
         }
 
     }
