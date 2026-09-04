@@ -40,3 +40,16 @@ body {
 .hidden {
     display: none;
 }
+
+/* Popup Window */
+.popup-window {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
