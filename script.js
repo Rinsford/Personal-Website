@@ -6,7 +6,7 @@ const filesAndDirectories = ['about-me', 'projects', 'contact'];
 
 //Repeat the command when the user presses the Enter key
 function repeatCommand() {
-    terminalInput.value = '';
+    terminalInput()
 }
 
 terminalInput.addEventListener('keydown', function(event) {
