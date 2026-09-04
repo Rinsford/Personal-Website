@@ -4,10 +4,6 @@ const output = document.querySelector('.terminal-output');
 //Add the files and directories to be displayed when the 'ls' command is executed
 const filesAndDirectories = ['about-me', 'projects', 'contact'];
 
-//Repeat the command when the user presses the Enter key
-function repeatCommand() {
-    terminalInput.value = '';
-}
 
 terminalInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -21,8 +17,8 @@ terminalInput.addEventListener('keydown', function(event) {
             output.textContent = filesAndDirectories.join('\n');
         }
 
-        // The terminal input reappears after the command is executed
-        repeatCommand();
+        //The terminal input clears after the command is executed
+        terminalInput.value = '';
 
         //If the user types the 'cd' command with the files name
         //The hover window will appear with the information in that file
