@@ -49,7 +49,7 @@ a {
 
 .cursor {
     display: inline-block;
-    animation: blink 0.2s step-end infinite;
+    animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
