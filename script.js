@@ -16,5 +16,9 @@ terminalInput.addEventListener('keydown', function(event) {
         if (command === 'ls') {
             output.textContent = filesAndDirectories.join('\n');
         }
+
+        // Clear the input field after executing the command
+        terminalInput.value = '';
+        terminalInput.focus();
     }
 })
