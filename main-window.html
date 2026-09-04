@@ -4,17 +4,29 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Rinsford's Portfolio</title>
+            <!--The link codes process: the first link is to connect to google fonts.
+                The second link is to connect to the font file server.
+                The third link is to load the VT323 font. -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
+            <!---This code is to make this file copy the coded style on the css file. --->
             <link rel="stylesheet" href="window.css">
         </head>
+
+
         <body>
+            <!--The code for the terminal ">"-->
+            <div class="terminal-input-wrapper">
+                <span class="prompt-symbol">></span>
+                <input type="text" class="terminal-input" placeholder="Type a command..." autofocus>
+            </div>
 
             <!--The code for the "█" symbol-->
             <h2><span class="cursor">█</span></h2>
 
+            <!---This code is to make this file copy the coded animation on the JavaScript file. --->
             <script src="script.js"></script>
         </body>
     </html>

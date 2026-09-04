@@ -9,6 +9,30 @@ body {
     font-style: normal;
 }
 
+/* Terminal Input Wrapper */
+.terminal-input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Prompt Symbol */
+.prompt-symbol {
+    font-family: "VT323", monospace;
+    margin-right: 8px;
+}
+
+/* Terminal Input */
+.terminal-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ceff00;
+    font-family: "VT323", monospace;
+    flex-grow: 1;
+}
+
+/* Blinking Cursor */
 .cursor {
     display: inline-block;
     animation: blink 1s step-end infinite;
