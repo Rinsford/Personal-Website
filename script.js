@@ -17,6 +17,10 @@ function openPopup() {
     popupWindow.classList.remove('hidden');
 }
 
+function closePopupWindow() {
+
+}
+
 
 terminalInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -38,23 +42,36 @@ terminalInput.addEventListener('keydown', function(event) {
             openPopup();
         }
 
+        //The terminal input clears after the command is executed
+        terminalInput.value = '';
+
         // If the user types 'cd projects', open the projects popup.
         if (command === 'cd projects') {
             openPopup();
             document.querySelector('#popup-content-projects').classList.remove('hidden');
         }
+        
+        //The terminal input clears after the command is executed
+        terminalInput.value = '';
 
         // If the user types 'cd contact', open the contact popup.
         if (command === 'cd contact') {
                openPopup();
              document.querySelector('#popup-content-contact').classList.remove('hidden');
         }
+        
+        //The terminal input clears after the command is executed
+        terminalInput.value = '';
 
     }
 });
 
 closePopup.addEventListener('click', function() {
     popupWindow.classList.add('hidden');
+    // Close any open popup content
+    document.querySelectorAll('.popup-content > div').forEach(function(div) {
+        div.classList.add('hidden');
+    });
 });
 
 popupHeader.addEventListener('pointerdown', function(event) {
