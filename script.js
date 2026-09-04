@@ -4,6 +4,10 @@ const output = document.querySelector('.terminal-output');
 //Add the files and directories to be displayed when the 'ls' command is executed
 const filesAndDirectories = ['about-me', 'projects', 'contact'];
 
+//Repeat the command when the user presses the Enter key
+function repeatCommand() {
+    terminalInput.value = '';
+}
 
 terminalInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -17,8 +21,7 @@ terminalInput.addEventListener('keydown', function(event) {
             output.textContent = filesAndDirectories.join('\n');
         }
 
-        // Clear the input field after executing the command
-        terminalInput.value = '';
-        terminalInput.focus();
+        // The terminal input reappears after the command is executed
+        repeatCommand();
     }
 })
