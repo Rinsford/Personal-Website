@@ -25,6 +25,25 @@
 
             <div class="terminal-output"></div>
 
+            <!--The code for the Popup Window (Hidden until triggered)-->
+            <div id="popup-window" class="hidden">
+
+                <!--The header of the popup window-->
+                <div id="popup-header">
+                    <span class="popup-title">About Me</span>
+
+                    <!--The close button for the popup window-->
+                    <button id="close-popup" class="close-button">✕</button>
+                </div>
+
+                <!--The content of the popup window-->
+                <div id="popup-content">
+
+                    <!--The embed HTML file-->
+                    <iframe src="about-me.html" style="width: 100%; height: 100%;" frameborder="0" class="popup-iframe"></iframe>
+                </div>
+            </div>
+
             <!---This code is to make this file copy the coded animation on the JavaScript file. --->
             <script src="script.js"></script>
         </body>

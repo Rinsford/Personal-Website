@@ -26,7 +26,8 @@ terminalInput.addEventListener('keydown', function(event) {
             
             //If the user types 'cd about-me', the hover window will appear with the information in that file
             if (command === 'cd about-me') {
-                window.location.href = 'about-me.html';
+                const popupWindow = document.querySelector('.popup-window');
+                popupWindow.classList.remove('hidden');
             }
 
             //If the user types 'cd projects', the hover window will appear with the information in that file

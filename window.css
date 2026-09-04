@@ -35,3 +35,8 @@ body {
     flex-grow: 1;
     caret-color: transparent;
 }
+
+/* Hidden Popup */
+.hidden {
+    display: none;
+}
