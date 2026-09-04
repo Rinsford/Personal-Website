@@ -41,6 +41,11 @@ body {
     display: none;
 }
 
+/* Popup Window Header */
+#popup-header {
+    background-color: #6b7c6b;
+}
+
 /* Popup Window */
 #popup-window {
     width: 400px;
