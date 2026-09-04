@@ -62,6 +62,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: move;
+    user-select: none;
 }
 
 .popup-content {
@@ -76,4 +78,8 @@ body {
     border: none;
     background-color: white;
     scrollbar-width: none;
+}
+
+.dragging iframe {
+    pointer-events: none;
 }
