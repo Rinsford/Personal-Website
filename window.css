@@ -10,6 +10,18 @@ body {
     font-style: normal;
 }
 
+/* CTScan overlay */
+ body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 10, 0, 0) 50%, rgba(0, 0, 0, 0.4) 50%);
+            z-index: 10;
+            background-size: 100% 3px;
+            pointer-events: none;
+        }
+
 /* Terminal Input Wrapper */
 .terminal-input-wrapper {
     display: flex;
