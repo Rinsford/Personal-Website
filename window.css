@@ -50,3 +50,15 @@ body {
     flex-grow: 1;
     caret-color: transparent;
 }
+
+#logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+     display: block;
+     margin: 0 auto;
+}
