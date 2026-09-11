@@ -1,5 +1,14 @@
-//Add the code to make the page change if the user presses "enter"
+const enterButton = document.querySelector('#button');
 
+if (enterButton) {
+    enterButton.focus();
+
+    enterButton.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            window.location.href = 'index.html';
+        }
+    });
+}
 
 const terminalInput = document.querySelector('.terminal-input');
 const output = document.querySelector('.terminal-output');
@@ -7,6 +16,7 @@ const output = document.querySelector('.terminal-output');
 //Add the files and directories to be displayed when the 'ls' command is executed
 const filesAndDirectories = ['about-me', 'projects', 'contact'];
 
+if (terminalInput) {
 terminalInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
          // Prevent form submission
@@ -48,3 +58,4 @@ terminalInput.addEventListener('keydown', function(event) {
 
     }
 });
+}
