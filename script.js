@@ -1,3 +1,6 @@
+//Add the code to make the page change if the user presses "enter"
+
+
 const terminalInput = document.querySelector('.terminal-input');
 const output = document.querySelector('.terminal-output');
 
